@@ -1,1 +1,5 @@
-<p>cell works!</p>
+<div class="w-24 h-24 border-4 border-gray-600 flex items-center justify-center text-4xl cursor-pointer"
+     [ngClass]="{'bg-blue-200': value === 'X', 'bg-yellow-200': value === 'O'}"
+     (click)="handleClick()">
+  {{ value }}
+</div>
